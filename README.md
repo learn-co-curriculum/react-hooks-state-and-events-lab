@@ -6,7 +6,7 @@
 ## World record click counter
 ![Oldtimer stuff](http://il5.picdn.net/shutterstock/videos/15633112/thumb/1.jpg)
 
-We got a new job! Woo! This time, we're a judge for Guiness World Records. We're no ordinary judge, however — we're a
+We got a new job! Woo! This time, we're a judge for Guinness World Records. We're no ordinary judge, however — we're a
 _modern day_ judge. We do things using _computers_. Instead of using those old, clunky clickity-things to count stuff
 for world records, we'll write our very digital clicker!
 
