@@ -8,7 +8,7 @@
 
 We got a new job! Woo! This time, we're a judge for Guinness World Records. We're no ordinary judge, however — we're a
 _modern day_ judge. We do things using _computers_. Instead of using those old, clunky clickity-things to count stuff
-for world records, we'll write our very digital clicker!
+for world records, we'll write our very own digital clicker!
 
 1. In the `components/DigitalClicker.js` file, create a `DigitalClicker` React component.
 2. This component has a state property called `timesClicked`, that is initially defined as 0.
@@ -21,8 +21,8 @@ your button should just say `0`.
 ![Spock](https://media.giphy.com/media/fECTyvPYevOHC/giphy.gif)
 
 You can only count so many jumps, hula-hoop rotations and hot dogs being devoured before you go insane. Time to move on
-from our record judge job to greener pastures! Not to worry, we've secured ourselves a job at YouTube this time! Our
-first job is to create some sort of debug bar that allows us to control the simulated network conditions on YouTube.
+from our record judge job to greener pastures! Not to worry, we've secured ourselves a gig at YouTube this time! Our
+first task is to create some sort of debug bar that allows us to control the simulated network conditions on YouTube.
 Among other things, we can change our resolution, the bitrate of the videos, the audio quality, and so on.
 
 1. In the `components/YouTubeDebugger.js` file, create a `YouTubeDebugger` React component.
