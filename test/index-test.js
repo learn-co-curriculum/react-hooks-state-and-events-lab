@@ -1,8 +1,8 @@
-const React = require('react');
-const { shallow } = require('enzyme');
+import React from 'react';
+import { shallow } from 'enzyme';
 
-const DigitalClicker = require('../components/DigitalClicker');
-const YouTubeDebugger = require('../components/YouTubeDebugger');
+import DigitalClicker from '../components/DigitalClicker';
+import YouTubeDebugger from '../components/YouTubeDebugger';
 
 function deepClone(obj) {
   return JSON.parse(JSON.stringify(obj));

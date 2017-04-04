@@ -1,8 +1,8 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const DigitalClicker = require('./components/DigitalClicker');
-const YouTubeDebugger = require('./components/YouTubeDebugger');
+import DigitalClicker from './components/DigitalClicker';
+import YouTubeDebugger from './components/YouTubeDebugger';
 
 ReactDOM.render(
   <div>
