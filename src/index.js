@@ -9,5 +9,5 @@ ReactDOM.render(
     <DigitalClicker />
     <YouTubeDebugger />
   </div>,
-  document.getElementById('root')
+  document.getElementById('global')
 );

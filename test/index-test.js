@@ -1,9 +1,12 @@
 import React from 'react';
 import { expect } from 'chai';
-import { shallow } from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
 
 import DigitalClicker from '../src/components/DigitalClicker';
 import YouTubeDebugger from '../src/components/YouTubeDebugger';
+
+import Adapter from 'enzyme-adapter-react-16';
+Enzyme.configure({ adapter: new Adapter() })
 
 const deepClone = obj => JSON.parse(JSON.stringify(obj));
 
