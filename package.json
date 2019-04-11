@@ -19,10 +19,10 @@
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-1": "^6.24.1",
     "chai": "^3.5.0",
-    "enzyme": "^3.1.0",
+    "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.0.1",
     "expect": "^21.2.1",
-    "react": "^16.0.0",
+    "react": "^16.8.4",
     "react-dom": "^16.0.0",
     "sinon": "^1.17.7"
   },
