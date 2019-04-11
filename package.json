@@ -2,6 +2,14 @@
   "name": "react-updating-state-lab",
   "version": "0.1.0",
   "private": true,
+  "babel": {
+    "presets": [
+      "airbnb",
+      "env",
+      "stage-1",
+      "react"
+    ]
+  },
   "devDependencies": {
     "extract-text-webpack-plugin": "^3.0.1",
     "jsdom": "^9.9.1",
