@@ -14,10 +14,10 @@
     "extract-text-webpack-plugin": "^3.0.1",
     "jsdom": "^9.9.1",
     "mocha": "^5.2.0",
-    "react-scripts": "^1.0.7",
+    "react-scripts": "^2.1.8",
     "react-test-renderer": "^16.0.0",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -27,9 +27,9 @@
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-1": "^6.24.1",
     "chai": "^4.1.2",
-    "enzyme": "^3.3.0",
+    "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "expect": "^21.2.1",
+    "expect": "^24.7.1",
     "react": "^16.8.4",
     "react-dom": "^16.0.0",
     "sinon": "^6.1.4"
