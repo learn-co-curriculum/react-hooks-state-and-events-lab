@@ -61,9 +61,12 @@ like this:
 4. Create a button with the class `'resolution'`. Clicking this button changes
    the `settings.video.resolution` state property to `'720p'`.
 
-**Note**: classes are added to the buttons in the `YouTubeDebugger` component to
-make testing your solution a little easier. They are indicated by the
-`className` attribute and should be left as is.
+## A Note on Classes in React
+
+Classes can be added as attributes in JSX, similar to HTML. The one difference
+to remember is that in JSX, we must use the `className` attribute, rather than
+`class`. Using `class` will cause an error while testing. Classes are used in
+this lab to make testing your solution a little easier.
 
 ## Resources
 
