@@ -59,9 +59,11 @@ like this:
 `settings.bitrate` state property to `12`.
 
 4. Create a button with the class `'resolution'`. Clicking this button changes
-the `settings.video.resolution` state property to `'720p'`.
+   the `settings.video.resolution` state property to `'720p'`.
 
-***Note: the classes are added to make testing your solution a little easier.***
+**Note**: classes are added to the buttons in the `YouTubeDebugger` component to
+make testing your solution a little easier. They are indicated by the
+`className` attribute and should be left as is.
 
 ## Resources
 
