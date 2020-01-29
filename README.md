@@ -47,7 +47,7 @@ devoured before you go insane. Time to move on from our record judge job to
 greener pastures! Not to worry, we've secured ourselves a gig at YouTube this
 time! Our first task is to create some sort of debug bar that allows us to
 control the simulated network conditions on YouTube. Among other things, we can
-change our resolution, the bitrate of the videos, the audio quality, and so on.
+change our resolution, the bitrate of the videos, the audio quality, and so on. **IMPORTANT:** remember that if you want to change any value in any object, you may want to spread the said object, as we mentioned in the previous lab.
 
 1. In the `components/YouTubeDebugger.js` file, create a `YouTubeDebugger` React
 component.
@@ -74,7 +74,6 @@ like this:
 4. Create a button with the class `'resolution'`. Clicking this button changes
    the `settings.video.resolution` state property to `'720p'`.
    
-   **REMEMBER** that if you want to change any value in any object, you may want to spread the said object, as we mentioned in the previous lab.
 
 ## A Note on Classes in React
 
