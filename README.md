@@ -73,6 +73,8 @@ like this:
 
 4. Create a button with the class `'resolution'`. Clicking this button changes
    the `settings.video.resolution` state property to `'720p'`.
+   
+   **REMEMBER** that if you want to change any value in any object, you may want to spread the said object, as we mentioned in the previous lab.
 
 ## A Note on Classes in React
 
