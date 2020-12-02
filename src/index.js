@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import DigitalClicker from './components/DigitalClicker';
-import YouTubeDebugger from './components/YouTubeDebugger';
+import App from './components/App'
 
 ReactDOM.render(
-  <div>
-    <DigitalClicker />
-    <YouTubeDebugger />
-  </div>,
-  document.getElementById('global')
+  <App />,
+  document.getElementById('root')
 );
