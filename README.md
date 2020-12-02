@@ -58,11 +58,8 @@ Check out this [StackOverflow post][] on `useState` with objects if you need hel
 1. In the `components/YouTubeDebugger.js` file, create a `YouTubeDebugger` React
 component.
 
-2. This component has several state properties. We want 3 separate pieces of state:
-
-  - `errors`: initial value of an empty array
-  - `user`: initial value of `null`
-  - `settings`: an object:
+2. This component has one piece of state, `settings`, which has an initial value
+   of an object:
 
 ```js
 {
@@ -73,11 +70,16 @@ component.
 }
 ```
 
-3. Create a button with the class `'bitrate'`. Clicking this button changes the
-`settings.bitrate` state property to `12`. 
+3. Create a button with the class `'bitrate'`. In the button, display the text:
+   "Current bitrate: 8", using the value from state to display the bitrate.
 
-4. Create a button with the class `'resolution'`. Clicking this button changes
-   the `settings.video.resolution` state property to `'720p'`.
+4. Clicking this button changes the `settings.bitrate` state property to `12`.
+
+5. Create a button with the class `'resolution'`. In the button, display the text:
+   "Current resolution: 1080p", using the value from state to display the resolution.
+
+6. Clicking this button changes the `settings.video.resolution` state property
+   to `'720p'`.
    
 
 ## A Note on Classes in React
