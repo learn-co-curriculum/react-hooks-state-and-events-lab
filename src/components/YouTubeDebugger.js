@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function YouTubeDebugger(props) {
+function YouTubeDebugger() {
   const [settings, setSettings] = useState({
     bitrate: 8,
     video: {
