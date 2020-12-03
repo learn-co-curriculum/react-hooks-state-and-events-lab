@@ -50,8 +50,35 @@ greener pastures! Not to worry, we've secured ourselves a gig at YouTube this
 time! Our first task is to create some sort of debug bar that allows us to
 control the simulated network conditions on YouTube. Among other things, we can
 change our resolution, the bitrate of the videos, the audio quality, and so on.
+
 **IMPORTANT:** remember that if you want to change any value in any object, you
-may want to spread the said object, as we mentioned in the previous lab.
+may want to spread the said object, as we mentioned in the previous lab. For example, imagine we have state like this:
+
+```jsx
+const [user, setUser] = useState({
+  name: "Duane",
+  phones: {
+    cell: "555-123-4567",
+    work: "555-123-4568",
+  }
+})
+```
+
+If we wanted to update the user's cell phone in that object, we'd need to use the *spread operator* to copy the other properties of the object to a new object, like so:
+
+```jsx
+function updateUserCell(newCell) {
+  setUser(prevUser => {
+    return {
+      ...prevUser.name,
+      phones: {
+        ...prevUser.phones,
+        cell: newCell
+      }
+    }
+  })
+}
+```
 
 Check out this [StackOverflow post][] on `useState` with objects if you need help with this one!
 
