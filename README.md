@@ -1,4 +1,4 @@
-# React Updating State Lab
+# React State Lab
 
 ## Overview
 
@@ -18,16 +18,16 @@ using _computers_. Instead of using those old, clunky clickity-things to count
 stuff for world records, we'll write our very own digital clicker!
 
 1. In the `components/DigitalClicker.js` file, create a `DigitalClicker` React
-component.
+   component.
 
 2. This component has an initial state property called `timesClicked`, which is
-initially defined as 0.
+   initially defined as 0.
 
 3. The component renders out a button with a label that shows the `timesClicked`
-value. This means that, at the start, your button should just say `0`.
+   value. This means that, at the start, your button should just say `0`.
 
 4. Whenever the button is clicked, update the state by incrementing the
-`timesClicked` by 1.
+   `timesClicked` by 1.
 
 **HINT**: At the moment, `src/components/App.js` is trying to import
 `DigitalClicker` _and_ the next component, `YouTubeDebugger`. To be able to see
@@ -35,7 +35,9 @@ your progress as you build out `DigitalClicker`, you can comment out the second
 component by wrapping it in curly braces and comment indicators:
 
 ```js
-{/*<YouTubeDebugger />*/}
+{
+  /*<YouTubeDebugger />*/
+}
 ```
 
 Don't forget to remove these before you begin building the second component!
@@ -52,7 +54,8 @@ control the simulated network conditions on YouTube. Among other things, we can
 change our resolution, the bitrate of the videos, the audio quality, and so on.
 
 **IMPORTANT:** remember that if you want to change any value in any object, you
-may want to spread the said object, as we mentioned in the previous lab. For example, imagine we have state like this:
+may want to spread the said object, as we mentioned in the previous lab. For
+example, imagine we have state like this:
 
 ```jsx
 const [user, setUser] = useState({
@@ -60,30 +63,32 @@ const [user, setUser] = useState({
   phones: {
     cell: "555-123-4567",
     work: "555-123-4568",
-  }
-})
+  },
+});
 ```
 
-If we wanted to update the user's cell phone in that object, we'd need to use the *spread operator* to copy the other properties of the object to a new object, like so:
+If we wanted to update the user's cell phone in that object, we'd need to use
+the _spread operator_ to copy the other properties of the object to a new
+object, like so:
 
 ```jsx
 function updateUserCell(newCell) {
-  setUser(prevUser => {
+  setUser((prevUser) => {
     return {
       ...prevUser.name,
       phones: {
         ...prevUser.phones,
-        cell: newCell
-      }
-    }
-  })
+        cell: newCell,
+      },
+    };
+  });
 }
 ```
 
 Check out this [StackOverflow post][] on `useState` with objects if you need help with this one!
 
 1. In the `components/YouTubeDebugger.js` file, create a `YouTubeDebugger` React
-component.
+   component.
 
 2. This component has one piece of state, `settings`, which has an initial value
    of an object:
@@ -107,18 +112,10 @@ component.
 
 6. Clicking this button changes the `settings.video.resolution` state property
    to `'720p'`.
-   
-
-## A Note on Classes in React
-
-Classes can be added as attributes in JSX, similar to HTML. The one difference
-to remember is that in JSX, we must use the `className` attribute, rather than
-`class`. Using `class` will cause an error while testing. Classes are used in
-this lab to make testing your solution a little easier.
 
 ## Resources
 
 - [React Docs on `useState`](https://reactjs.org/docs/hooks-state.html)
-- [`useState` with objects][StackOverflow post]
+- [`useState` with objects][stackoverflow post]
 
-[StackOverflow post]: https://stackoverflow.com/questions/54150783/react-hooks-usestate-with-object
+[stackoverflow post]: https://stackoverflow.com/questions/54150783/react-hooks-usestate-with-object
