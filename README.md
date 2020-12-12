@@ -2,119 +2,82 @@
 
 ## Overview
 
+In the labs for this section, we'll be working on a grocery list app. Some of this
+app is already built out -- there are static versions of the components. We'll be
+using **state** and **events** to make our app dynamic.
+
+Here's what we have so far:
+
+![demo](images/demo.png)
+
+The components you have to work with are in the `src/components` folder. Start by
+examining these components and draw out your component hierarchy to see how data can
+be passed from one component to another.
+
 In this lab, you'll update state and get more practice with the `useState` hook.
-After running `npm install` and `npm start`, you'll see that this app is not
-currently working. Your task is to build and export two components. These
-components are unrelated except in that they but will use `useState` to update
-their internal state.
 
-## World Record Click Counter
+It's recommended that you run `npm start` and work on this in the browser
+**before** running tests - try to get your app to match the demo! Once you've
+built out the components below, run `npm test` or `learn test` to see if your
+code passes the tests.
 
-![Oldtimer stuff](http://il5.picdn.net/shutterstock/videos/15633112/thumb/1.jpg)
+## Deliverables
 
-We got a new job! Woo! This time, we're a judge for the Guinness World Records.
-We're no ordinary judge, however — we're a _modern day_ judge. We do things
-using _computers_. Instead of using those old, clunky clickity-things to count
-stuff for world records, we'll write our very own digital clicker!
+### Dark Mode Toggle
 
-1. In the `components/DigitalClicker.js` file, create a `DigitalClicker` React
-   component.
+In the `App` component, there is a button for toggling between dark mode and
+light mode. Using the `useState` hook, create a state variable in the `App`
+component. Then, use that variable to determine if our app should be in dark
+mode or light mode.
 
-2. This component has an initial state property called `timesClicked`, which is
-   initially defined as 0.
+You will also need to add an event handler to the dark mode button, and update
+state when the button is clicked.
 
-3. The component renders out a button with a label that shows the `timesClicked`
-   value. This means that, at the start, your button should just say `0`.
-
-4. Whenever the button is clicked, update the state by incrementing the
-   `timesClicked` by 1.
-
-**HINT**: At the moment, `src/components/App.js` is trying to import
-`DigitalClicker` _and_ the next component, `YouTubeDebugger`. To be able to see
-your progress as you build out `DigitalClicker`, you can comment out the second
-component by wrapping it in curly braces and comment indicators:
-
-```js
-{
-  /*<YouTubeDebugger />*/
-}
-```
-
-Don't forget to remove these before you begin building the second component!
-
-## Debugging YouTube
-
-![Spock](https://media.giphy.com/media/fECTyvPYevOHC/giphy.gif)
-
-You can only count so many jumps, hula-hoop rotations, and hot dogs being
-devoured before you go insane. Time to move on from our record judge job to
-greener pastures! Not to worry, we've secured ourselves a gig at YouTube this
-time! Our first task is to create some sort of debug bar that allows us to
-control the simulated network conditions on YouTube. Among other things, we can
-change our resolution, the bitrate of the videos, the audio quality, and so on.
-**IMPORTANT:** remember that if you want to change any value in any object, you
-may want to spread the said object, as we mentioned in the previous lab. For
-example, imagine we have state like this:
+The actual functionality of changing our app's theme is handled in CSS, so all
+you have to do is update the `className` of this div based on your state
+variable:
 
 ```jsx
-const [user, setUser] = useState({
-  name: "Duane",
-  phones: {
-    cell: "555-123-4567",
-    work: "555-123-4568",
-  },
-});
+<div className="App dark">
+{/* for dark mode */}
+</div>
+
+<div className="App light">
+{/* for light mode */}
+</div>
 ```
 
-If we wanted to update the user's cell phone in that object, we'd need to use
-the _spread operator_ to copy the other properties of the object to a new
-object, like so:
+### Filter
 
-```jsx
-function updateUserCell(newCell) {
-  setUser((prevUser) => {
-    return {
-      ...prevUser.name,
-      phones: {
-        ...prevUser.phones,
-        cell: newCell,
-      },
-    };
-  });
-}
-```
+In the `ShoppingList` component, there is a `<select>` element that will allow
+us to **filter** the list of items by category.
 
-Check out this [StackOverflow post][] on `useState` with objects if you need help with this one!
+Use the `useState` hook to create a state variable called `selectedCategory` for
+keeping track of the selected value from this `<select>` element. When the value
+of the `<select>` element is changed, update state.
 
-1. In the `components/YouTubeDebugger.js` file, create a `YouTubeDebugger` React
-   component.
+You should also use the `selectedCategory` variable to determine which items to
+display in the shopping list. You'll need some way of **filter**ing the array of
+items based on the `selectedCategory`.
 
-2. This component has one piece of state, `settings`, which has an initial value
-   of an object:
+### Add to Cart
+
+In the `Item` component, when the user clicks the `<button>` element, the item
+should be added to their virtual cart. The way we'll show the user that the item
+is in the cart is by changing the className on the `<li>` element:
 
 ```js
-{
-  bitrate: 8,
-  video: {
-    resolution: '1080p'
-  }
-}
+<li className="in-cart">
+{/* the item is in the cart */}
+</li>
+
+<li className="">
+{/* the item is NOT in the cart */}
+</li>
 ```
 
-3. Create a button with the class `'bitrate'`. In the button, display the text:
-   "Current bitrate: 8", using the value from state to display the bitrate.
-
-4. Clicking this button changes the `settings.bitrate` state property to `12`.
-
-5. Create a button with the class `'resolution'`. In the button, display the text:
-   "Current resolution: 1080p", using the value from state to display the resolution.
-
-6. Clicking this button changes the `settings.video.resolution` state property
-   to `'720p'`.
+You'll also need to add state to solve this deliverable!
 
 ## Resources
 
 - [React Docs on `useState`](https://reactjs.org/docs/hooks-state.html)
-- [`useState` with objects][stackoverflow post]
-
-[stackoverflow post]: https://stackoverflow.com/questions/54150783/react-hooks-usestate-with-object
