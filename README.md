@@ -33,22 +33,9 @@ mode or light mode.
 You will also need to add an event handler to the dark mode button, and update
 state when the button is clicked.
 
-<<<<<<< HEAD
-You can only count so many jumps, hula-hoop rotations, and hot dogs being
-devoured before you go insane. Time to move on from our record judge job to
-greener pastures! Not to worry, we've secured ourselves a gig at YouTube this
-time! Our first task is to create some sort of debug bar that allows us to
-control the simulated network conditions on YouTube. Among other things, we can
-change our resolution, the bitrate of the videos, the audio quality, and so on.
-
-**IMPORTANT:** remember that if you want to change any value in any object, you
-may want to spread the said object, as we mentioned in the previous lab. For
-example, imagine we have state like this:
-=======
 The actual functionality of changing our app's theme is handled in CSS, so all
 you have to do is update the `className` of this div based on your state
 variable:
->>>>>>> hooks-rewrite
 
 ```jsx
 <div className="App dark">
@@ -59,19 +46,6 @@ variable:
 {/* for light mode */}
 </div>
 ```
-
-### Filter
-
-In the `ShoppingList` component, there is a `<select>` element that will allow
-us to **filter** the list of items by category.
-
-Use the `useState` hook to create a state variable called `selectedCategory` for
-keeping track of the selected value from this `<select>` element. When the value
-of the `<select>` element is changed, update state.
-
-You should also use the `selectedCategory` variable to determine which items to
-display in the shopping list. You'll need some way of **filter**ing the array of
-items based on the `selectedCategory`.
 
 ### Add to Cart
 
@@ -89,7 +63,21 @@ is in the cart is by changing the className on the `<li>` element:
 </li>
 ```
 
-You'll also need to add state to solve this deliverable!
+Naturally, you'll also need to add state to the `Item` component to solve this
+deliverable!
+
+### Filter
+
+In the `ShoppingList` component, there is a `<select>` element that will allow
+us to **filter** the list of items by category.
+
+Use the `useState` hook to create a state variable called `selectedCategory` for
+keeping track of the selected value from this `<select>` element. When the value
+of the `<select>` element is changed, update state.
+
+You should also use the `selectedCategory` variable to determine which items to
+display in the shopping list. You'll need some way of **filter**ing the array of
+items based on the `selectedCategory`.
 
 ## Resources
 
