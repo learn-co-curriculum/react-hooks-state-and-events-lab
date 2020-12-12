@@ -1,6 +1,5 @@
 import "@testing-library/jest-dom";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { expect } from "chai";
 import Item from "../components/Item";
 
 test("the <li> does not have a className when initialized", () => {

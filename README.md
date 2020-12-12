@@ -47,19 +47,6 @@ variable:
 </div>
 ```
 
-### Filter
-
-In the `ShoppingList` component, there is a `<select>` element that will allow
-us to **filter** the list of items by category.
-
-Use the `useState` hook to create a state variable called `selectedCategory` for
-keeping track of the selected value from this `<select>` element. When the value
-of the `<select>` element is changed, update state.
-
-You should also use the `selectedCategory` variable to determine which items to
-display in the shopping list. You'll need some way of **filter**ing the array of
-items based on the `selectedCategory`.
-
 ### Add to Cart
 
 In the `Item` component, when the user clicks the `<button>` element, the item
@@ -76,7 +63,21 @@ is in the cart is by changing the className on the `<li>` element:
 </li>
 ```
 
-You'll also need to add state to solve this deliverable!
+Naturally, you'll also need to add state to the `Item` component to solve this
+deliverable!
+
+### Filter
+
+In the `ShoppingList` component, there is a `<select>` element that will allow
+us to **filter** the list of items by category.
+
+Use the `useState` hook to create a state variable called `selectedCategory` for
+keeping track of the selected value from this `<select>` element. When the value
+of the `<select>` element is changed, update state.
+
+You should also use the `selectedCategory` variable to determine which items to
+display in the shopping list. You'll need some way of **filter**ing the array of
+items based on the `selectedCategory`.
 
 ## Resources
 
