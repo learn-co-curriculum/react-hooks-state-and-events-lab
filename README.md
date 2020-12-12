@@ -6,10 +6,6 @@ In the labs for this section, we'll be working on a grocery list app. Some of th
 app is already built out -- there are static versions of the components. We'll be
 using **state** and **events** to make our app dynamic.
 
-Here's what we have so far:
-
-![demo](images/demo.png)
-
 The components you have to work with are in the `src/components` folder. Start by
 examining these components and draw out your component hierarchy to see how data can
 be passed from one component to another.
