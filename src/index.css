@@ -67,8 +67,7 @@ header h2 {
 }
 
 header button {
-  background: var(--magenta);
-  color: white;
+  background: var(--yellow);
 }
 
 .Filter select {
