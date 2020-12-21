@@ -2,18 +2,18 @@
 
 ## Overview
 
-In the labs for this section, we'll be working on a grocery list app. Some of this
-app is already built out -- there are static versions of the components. We'll be
+In the labs for this section, we'll be working on a grocery list app. Some of
+this app is already built out using static versions of the components. We'll be
 using **state** and **events** to make our app dynamic.
 
-The components you have to work with are in the `src/components` folder. Start by
-examining these components and draw out your component hierarchy to see how data can
-be passed from one component to another.
+The components you have to work with are in the `src/components` folder. Start
+by examining these components and draw out your component hierarchy to see how
+data can be passed from one component to another.
 
 In this lab, you'll update state and get more practice with the `useState` hook.
 
 It's recommended that you run `npm start` and work on this in the browser
-**before** running tests - try to get your app to match the demo! Once you've
+**before** running tests. Try to get your app to match the demo! Once you've
 built out the components below, run `npm test` or `learn test` to see if your
 code passes the tests.
 
@@ -69,7 +69,7 @@ us to **filter** the list of items by category.
 
 Use the `useState` hook to create a state variable called `selectedCategory` for
 keeping track of the selected value from this `<select>` element. When the value
-of the `<select>` element is changed, update state.
+of the `<select>` element is **changed**, update state.
 
 You should also use the `selectedCategory` variable to determine which items to
 display in the shopping list. You'll need some way of **filter**ing the array of
