@@ -10,8 +10,10 @@ function App() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
 
+  const appClass = isDarkMode ? "App dark" : "App light"
+
   return (
-    <div className={"App " + (isDarkMode ? "dark" : "light")}>
+    <div className={appClass}>
       <header>
         <h2>Shopster</h2>
         <button onClick={handleDarkModeClick}>
