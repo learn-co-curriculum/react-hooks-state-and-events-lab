@@ -1,5 +1,10 @@
 # React State Lab
 
+## Learning Goals
+
+- Update state based on events
+- Work with multiple state variables together
+
 ## Overview
 
 In the labs for this section, we'll be working on a grocery list app. Some of
@@ -16,6 +21,8 @@ It's recommended that you run `npm start` and work on this in the browser
 **before** running tests. Try to get your app to match the demo! Once you've
 built out the components below, run `npm test` or `learn test` to see if your
 code passes the tests.
+
+![demo](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-state-and-events-lab/demo.gif)
 
 ## Deliverables
 
