@@ -22,6 +22,8 @@ It's recommended that you run `npm start` and work on this in the browser
 built out the components below, run `npm test` or `learn test` to see if your
 code passes the tests.
 
+![demo](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-state-and-events-lab/demo.gif)
+
 ## Deliverables
 
 ### Dark Mode Toggle
