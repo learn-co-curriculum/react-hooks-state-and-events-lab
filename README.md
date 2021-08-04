@@ -56,7 +56,7 @@ In the `Item` component, when the user clicks the `<button>` element, the item
 should be added to their virtual cart. The way we'll show the user that the item
 is in the cart is by changing the className on the `<li>` element:
 
-```js
+```jsx
 <li className="in-cart">
 {/* the item is in the cart */}
 </li>
