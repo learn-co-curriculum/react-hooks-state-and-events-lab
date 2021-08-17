@@ -5,7 +5,7 @@
 - Update state based on events
 - Work with multiple state variables together
 
-## Overview
+## Introduction
 
 In the labs for this section, we'll be working on a grocery list app. Some of
 this app is already built out using static versions of the components. We'll be
