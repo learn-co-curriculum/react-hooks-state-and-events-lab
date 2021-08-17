@@ -37,8 +37,8 @@ You will also need to add an event handler to the dark mode button, and update
 state when the button is clicked.
 
 The actual functionality of changing our app's theme is handled in CSS, so all
-you have to do is update the `className` of this div based on your state
-variable:
+you have to do is set up the code to update the `className` of the div based on
+your state variable:
 
 ```jsx
 <div className="App dark">
