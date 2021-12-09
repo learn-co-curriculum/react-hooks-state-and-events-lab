@@ -66,8 +66,10 @@ is in the cart is by changing the className on the `<li>` element:
 </li>
 ```
 
-If the item _is not_ in the cart, the `<button>` element's text should read "Add to Cart", and if the item _is_ in the cart, the `<button>` element's text should read "Remove From Cart". Naturally, you'll also need to add state to the `Item` component to solve this
-deliverable!
+If the item _is not_ in the cart, the `<button>` element's text should read "Add
+to Cart", and if the item _is_ in the cart, the `<button>` element's text should
+read "Remove From Cart". Naturally, you'll also need to add state to the `Item`
+component to solve this deliverable!
 
 ### Filter
 
