@@ -1,11 +1,20 @@
 import React from "react";
 import Item from "./Item";
+import { useState } from 'react'
 
-function ShoppingList({ items }) {
+const ShoppingList = ({ items }) => {
+
+  const [cat, setCat] = useState('')
+
+  const handleChange = (e) => {
+    console.log(e.target.value)
+    setCat(e.target.value)
+  }
+
   return (
     <div className="ShoppingList">
       <div className="Filter">
-        <select name="filter">
+        <select onChange={handleChange} name="filter">
           <option value="All">Filter by category</option>
           <option value="Produce">Produce</option>
           <option value="Dairy">Dairy</option>
