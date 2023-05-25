@@ -8,9 +8,9 @@ function App() {
 
   function DarkMode(){
       //what use state does
-      console.log("I've been clicked")
+        //console.log("I've been clicked")
       setDarKMode((darkModeOn) => !darkModeOn) 
-      //console.log(darkModeOn) 
+        //console.log(darkModeOn) 
   }
   //console.log(darkModeOn) 
 

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Item from "./Item";
 
 function ShoppingList({ items }) {
+
+  const [selectedCategory, filterBySelectedCategory] = useState("Filter by category");
+
+  function filterMeFood(){
+
+  }
+
+
+
   return (
     <div className="ShoppingList">
       <div className="Filter">
